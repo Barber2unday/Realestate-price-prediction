@@ -8,7 +8,7 @@ import uvicorn
 real_estate_pred_app = FastAPI()
 
 # Load the model from local disc
-filename = 'Data\property_price_prediction.sav'
+filename = 'property_price_prediction.sav'
 loaded_model = joblib.load(filename)
 
 # Create the get and index method to open automatically on a server
